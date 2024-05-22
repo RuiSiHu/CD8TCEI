@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CD8-TCEI_prediction</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8"> <!--编码格式为utf-8，持中文不会出现乱码-->
+    <script type="text/jscript" src="../static/main.js"> </script>
+    <script src="../static/jquery-1.js"> </script>
+<script>
+function clearDefault(el){
+            if (el.defaultValue==el.value)el.value=""
+        }
+</script>
+
+<style type="text/css">
+body,td,th {
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	text-align: center;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+h1 {
+	font-size: 12px;
+	color: #F00;
+}
+.ab {
+	font-family: Arial, Helvetica, sans-serif, Fixedsys;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #333;
+}
+ab {
+	font-size: 16px;
+}
+.name1 {
+	font-size: 18px;
+	font-style: normal;
+	font-weight: bold;
+	color: #000;
+	font-family: "Comic Sans MS", cursive;
+	text-align: left;
+}
+.name_description {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 18px;
+	color: #903;
+}
+.name_description p {
+	font-size: 18px;
+	text-align: justify;
+}
+text {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #000;
+}
+.text {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #000;
+	text-align: center;
+}
+.lable {
+	font-family: Arial, Helvetica, sans-serif, Fixedsys;
+	font-size: 16px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #FFF;
+	text-align: center;
+}
+
+.text {
+	font-size: 24px;
+}
+.text {
+	font-size: 18px;
+	color: #000000;
+	text-align: justify;
+}
+.name_description .text .text .text {
+	font-size: 18px;
+}
+.name1 {
+	font-size: 20px;
+	text-align: center;
+}
+.RUN {
+	font-size: 18px;
+	font-style: normal;
+	font-weight: bold;
+	color: #09F;
+	text-align: center;
+}
+
+/*样式1(myLink01)*/
+a.link01:link {
+	text-decoration: none;
+	color: #FFF;
+}
+a.link01:visited {
+	text-decoration: none;
+	color: #FFF;
+	background-color: #000;
+}
+a.link01:hover {
+	text-decoration: underline;
+}
+a.link01:active {
+	text-decoration: none;
+}
+
+
+/*样式2(myLink02)*/
+a.link02:link {
+	font-weight: bold
+	text-decoration: none;
+	color: #00F;
+}
+a.link02:visited {
+	font-weight: bold
+	text-decoration: none;
+	color: #00F;
+	background-color: #CCCCCC;
+}
+a.link02:hover {
+	font-weight: bold
+	text-decoration: underline;
+}
+a.link02:active {
+	font-weight: bold
+	text-decoration: none;
+}
+
+}
+body table tr td table tr td {
+	color: #000;
+	text-align: center;
+}
+body table tr td table tr {
+	text-align: center;
+}
+tr {
+	text-align: center;
+}
+.text {
+}
+chat_tr {
+	text-align: center;
+}
+.text .text {
+	text-align: center;
+}
+.name_description {
+	text-align: left;
+}
+.ab .prediction {
+	color: #FFF;
+	font-family: "Times New Roman", Times, serif;
+}
+
+/*div(foot)*/
+.nav {
+    background: #CCCCCC;
+	font-size: 14px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif, Fixedsys;
+	color: #903;
+    padding: 5px 0 3px 0;
+    width: 1024px;
+    position: fixed;
+    left: 50%;
+	transform: translate(-50%, -50%);
+    bottom: 0;
+}
+</style>
+
+
+
+</head>
+
+
+<body text="#0000FF">
+<div align="center">
+  <table width="1024" border="0" cellspacing="0">
+    <tr>
+      <td><div align="center"><img src="../static/Logo.png" width="1024" height="123" alt="" /></div></td>
+    </tr>
+  </table>
+  
+  <table width="1024" border="0" cellspacing="0">
+    <tr>
+      <td width="100" height="8" bgcolor="#0099CC"><h3 class="lable"><a href="http://lab.malab.cn/~hrs/CD8TCEI-EukPath/" class="link01">Home</a></h3></td>
+      <td width="100" height="8" bgcolor="#0099CC"><h3 class="lable"><a href="http://121.41.76.253:7006/" class="link01">Prediction</a></h3></td>
+      <td width="100" height="8" bgcolor="#0099CC"><h3 class="lable"><a href="http://lab.malab.cn/~hrs/CD8TCEI-EukPath/download.html" class="link01">Download</a></h3></td>
+      <td width="100" height="8" bgcolor="#0099CC"><h3 class="lable"><a href="http://lab.malab.cn/~hrs/CD8TCEI-EukPath/contact.html" class="link01">Contact</a></h3></td>
+      <td width="100" height="8" bgcolor="#0099CC"><h3 class="lable">&nbsp;</h3></td>
+      <td height="8" bgcolor="#0099CC">&nbsp;</td>
+      <td height="8" bgcolor="#0099CC">&nbsp;</td>
+      <td height="8" bgcolor="#0099CC">&nbsp;</td>
+    </tr>
+  </table>
+  <table width="1024" border="0" cellspacing="0">
+    <tr>
+      <td height="45"><div align="left"><span class="name1">CD8TCEI-EukPath: CD8+ T cell epitope prediciton server for eukaryotic pathogens</span></div></td>
+    </tr>
+  </table>
+<table width="1024" border="0" cellspacing="0" cellpadding="0">
+  <form id="input" action="submit" method="post">
+  <tr>
+    <td colspan="2"><p class="name_description"><span class="link02">Input Sequence</p>
+      <p class="text">Peptide sequence (input amino acid sequence in FASTA format)</p></td>
+    <td><p class="name_description"><span class="link02">Prediction results</p>      
+  <tr>
+    <td width="367"><textarea name="sequence" id="textbyid" class="textone" cols="50" rows="20" onfocus="this.value=" ;this.onfocus="null;&quot;">&gt;Seq1
+TSAVLLLLVV
+&gt;Seq2
+QKFAELLEQ
+&gt;Seq3
+YAYVNYHNL
+&gt;Seq4
+KSFQNYTYL
+&gt;Seq5
+YSFGKYTYM
+</textarea></td>
+    <td>&nbsp;</td>
+    <td><table width="435" border="1" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="115" height="25" bgcolor="#009900" class="ab" scope="col"><span class="prediction">Sequence name</span></td>
+        <td width="139" bgcolor="#009900" class="ab" scope="col"><span class="prediction">Predicted epitope</span></td>
+        <td width="105" bgcolor="#009900" class="ab" scope="col"><span class="prediction">Probability</span></td>
+      </tr>
+      <tr> {% for a in result%} </tr>
+      <tr>
+        <td width="115" height="20px" class="ab" aligen="center"> {{a[0]}}</td>
+        <td width="139" height="20px" class="ab" aligen="center"> {{a[1]}}</td>
+        <td width="105" height="20px" class="ab" aligen="center"> {{a[2]}}</td>
+      </tr>
+      {% endfor%}
+    </table>
+      <p>
+      <form id="output" action="./result" method="GET">
+        <input id="resubmitbuttopn" class = "enabled1" name="Resubmit" type="button" value="Resubmit" onclick="window.open('http://121.41.76.253:7006/')">
+        </form>
+      </p>        
+  <tr>
+
+<td width="367"><input id="submitbuttopn" class = "enabled1" style="float:left;" name="Submit" type="submit" value="Submit" />
+				<input id="resetbyid" class="enabled2" style="float:right;" name="Clear" type="reset" value="Clear" onclick="clearVal()" />
+                </form>
+                </td>
+
+    <td width="217">&nbsp;</td>
+   
+<form id="output" action="./result" method="GET">
+    <td width="438">
+    </form>    
+</table>
+
+<script>
+
+                     function ClearTextArea()
+		  {
+		     document.getElementById("[id='input_text']").value="";
+		  }
+
+               $('#submitbuttopn').click(function(){
+               $("#output_text").append("Please wait while form is submitting..."
+               +"\n"+"Feature extraction..."+"\n"+"Feature fusion..." +"\n"+"Feature selection..."+"\n"+"Load the model..."+"\n"+"Predicting result...");
+               $('#input').submit();});
+             </script>
+             
+<table width="1024" border="0" cellspacing="0">
+    <tr>
+      <td><p class="RUN"> RUN CD8-TCEI ON YOUR PC</p></td>
+    </tr>
+</table>
+
+  <p>&nbsp;</p>
+<p align="center">&nbsp;</p>
+
+</div>
+<p align="center">&nbsp;</p>
+	<body>
+    <div class="nav">
+    <ul>
+      <td height="500"><span>Please cite: CD8TCEI-EukPath: A novel predictor to rapidly identify eukaryotic pathogen-derived antigen epitopes specific for host CD8+ T cells.</span></td>
+</ul>
+</body>
+</body>
+</html>
+
